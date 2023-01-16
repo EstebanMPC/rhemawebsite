@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css"> 
     <title>Rhema Services</title>
 </head>
 <body>
@@ -17,53 +23,68 @@
     </nav>
 
     <div id="landingpage">
-        <div>
+        <div class="landingtextcontainer col">
+            <h1 class="title">RHEMA</h1>
+            <h1 class="title">Handyman Services</h1>
+            <h5 class="subtitle mb-5">Fixin' things like its the worldcup</h5>
             <div>
-                <h1>Handyman Services</h1>
-                <h3>We fix things like its the worldcup</h3>
+                <a class="btn btn-primary" href="">Our Services <i class="bi bi-arrow-up-right"></i></a>
+                <a class="servicesbtn ms-3" href="">About Us<i class="bi bi-arrow-up"></i></a>
             </div>
-            <div>
-                <a href="">Our Services</a>
-                <a href="">About Us</a>
+            <div class="d-flex mt-5">
+                <div class="col">
+                    <i class="bi bi-tools"></i>
+                    <h2>We do it all</h2>
+                    <p>Whenever wherever</p>
+                </div>
+                <div class="col ms-5">
+                    <i class="bi bi-trophy"></i>
+                    <h2>We do it all</h2>
+                    <p>Whenever wherever</p>
+                </div>
             </div>
         </div>
-        <div class="goalimg">
+        <div class="landingimagecontainer col">
+            <div class="gradientlanding"></div>
             <img src="./images/goal.png" alt="" >
         </div>
     </div>
-
-    <div>
-        <div>
-            <div>
-                Why Rhema is the best in NOVA
-            </div>
-            <div>Rhema is a handy man services provider</div>
+    
+    <div id="aboutsection">
+        <div class="col aboutustitle">
+            <h2>Why Rhema is</h2>
+            <h2>the best in NOVA</h2>
+            <h3>We live by honesty and trust</h3>
         </div>
-        <div>
-            <div>
-                <div>
-                    <h2>Honesty</h2>
+        <div class="honestytrust borderaccent p-5 col">
+            <div class="honestytext m-3">
+                <div class="borderaccentchild">
+                    <h2 class="m-2">Honesty</h2>
                 </div>
-                <div>
-                    <p>
-                        If the job is too big, we will connect you to a licensed contractor
-                    </p>
-                </div>
+                <p>
+                    If the job is too big, we will connect you to a licensed contractor -Free! 
+                </p>
             </div>
-            <div>
-                <div>
-                    <h2>Trust</h2>
+            <div class="honestytext m-3">
+                <div class="borderaccentchild">
+                    <h2 class="m-2">Trust</h2>
                 </div>
-                <div>
-                    <p>
-                        We don't get paid till you LOVE the results
-                    </p>
+                <p>
+                    We don't get paid till you LOVE the results
+                </p>
+            </div>
+            <div class="honestytext m-3">
+                <div class="borderaccentchild">
+                    <h2 class="m-2">ASAP</h2>
                 </div>
+                <p>
+                    We are usually available within a day
+                </p>
             </div>
         </div>
     </div>
 
-    <div id="services">
+    <!-- <div id="services">
         <div>
             <h1>Services to make your day</h1>
         </div>
@@ -100,12 +121,11 @@
             </div>
         </div>
         <a>Contact us</a>
-    </div>
+    </div> -->
 
-    <gallery>
+ 
 
-    </gallery>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </body>
 </html>
