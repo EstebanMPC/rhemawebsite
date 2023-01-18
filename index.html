@@ -23,7 +23,7 @@
     </nav>
 
     <div id="landingpage">
-        <div class="landingtextcontainer col">
+        <div class="landingtextcontainer col m-5">
             <h1 class="title">RHEMA</h1>
             <h1 class="title">Handyman Services</h1>
             <h5 class="subtitle mb-5">Fixin' things like its the worldcup</h5>
@@ -32,14 +32,14 @@
                 <a class="servicesbtn ms-3" href="">About Us<i class="bi bi-arrow-up"></i></a>
             </div>
             <div class="d-flex mt-5">
-                <div class="col">
+                <div class="col pt-3">
                     <i class="bi bi-tools"></i>
-                    <h2>We do it all</h2>
+                    <h2 class="mt-3">We do it all</h2>
                     <p>Whenever wherever</p>
                 </div>
-                <div class="col ms-5">
+                <div class="col ms-5 pt-3 ps-5">
                     <i class="bi bi-trophy"></i>
-                    <h2>We do it all</h2>
+                    <h2 class="mt-3">We do it all</h2>
                     <p>Whenever wherever</p>
                 </div>
             </div>
@@ -50,11 +50,13 @@
         </div>
     </div>
     
-    <div id="aboutsection">
-        <div class="col aboutustitle">
-            <h2>Why Rhema is</h2>
-            <h2>the best in NOVA</h2>
-            <h3>We live by honesty and trust</h3>
+    <div id="aboutsection" class="darkbackground">
+        <div class="col d-flex flex-column ms-5">
+            <div class="aboutustitle">
+                <h2>Why Rhema is</h2>
+                <h2>the best in NOVA</h2>
+                <h3>We are proud of our customer-centric values</h3>
+            </div>
         </div>
         <div class="honestytrust borderaccent p-5 col">
             <div class="honestytext m-3">
@@ -84,46 +86,85 @@
         </div>
     </div>
 
-    <!-- <div id="services">
-        <div>
-            <h1>Services to make your day</h1>
-        </div>
-        <div>
+    <div class="m-5 ps-2 borderaccentchild servicestitle">
+        <h1>Services to make your day</h1>
+    </div>
+    <div id="services" class="mt-5">
+        <div class="servicescontainer m-5">
             <div>
-                <img>
-                <h3>Small Repair</h3>
-                <p>Small Repair</p>
+                <i class="bi bi-wrench"></i>
+                <h3 class="mt-3">Small Repair</h3>
+                <p>Drywall, garage doors, sinks, etc. Whatever your home needs!</p>
             </div>
             <div>
-                <img>
-                <h3>Landscape</h3>
+                <i class="bi bi-tree"></i>
+                <h3 class="mt-3">Landscape</h3>
                 <p>Mulching, seeding, garden retaining walls. We can do it!</p>
             </div>
             <div>
-                <img>
-                <h3>Pressure washing</h3>
+                <i class="bi bi-recycle"></i>
+                <h3 class="mt-3">Pressure washing</h3>
                 <p>No job is too tough</p>
             </div>
             <div>
-                <img>
-                <h3>Trash Cleanup</h3>
+                <i class="bi bi-recycle"></i>
+                <h3 class="mt-3">Trash Cleanup & Recycling</h3>
                 <p>We will collect and haul</p>
             </div>
             <div>
-                <img>
-                <h3>Janitorial Services</h3>
+                <i class="bi bi-stars"></i>
+                <h3 class="mt-3">Janitorial Services</h3>
                 <p>Understaffed? Don't worry!</p>
             </div>
             <div>
-                <img>
-                <h3>Parking lot Striping</h3>
+                <i class="bi bi-paint-bucket"></i>
+                <h3 class="mt-3">Parking lot Striping</h3>
                 <p>So nice!</p>
             </div>
         </div>
-        <a>Contact us</a>
-    </div> -->
+        <a class="btn btn-primary" href="">Our Services <i class="bi bi-arrow-up-right"></i></a>
+    </div>
 
- 
+    <div class="ms-5 pb-3 mt-5 pt-5">
+        <h2 class="gallerytitle borderaccentchild ps-3">Our work</h2>
+    </div>
+    <div id="gallerysection" class="d-flex flex-column align-items-center justify-content-center">
+        <div class="gallerybackground d-flex justify-content-center" >
+            <div id="carouselRhema" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/stripingbefore.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/stripingafter.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/vinebefore.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/vineafter.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselRhema" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselRhema" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="closingbanner" class="d-flex flex-column align-items-center justify-content-center mt-5 pt-5 mb-5 pb-5">
+        <img src="./images/RHEMA1.png" alt="">
+        <h3>We are in a mission to shape and define quality service</h3>
+    </div>
+
+    <footer class="text-light darkbackground d-flex flex-column align-items-center justify-content-center " >
+        <a href="">About</a>
+        <a href="">Contact us</a>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
