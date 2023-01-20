@@ -10,26 +10,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="style.css"> 
     <title>Rhema Services</title>
 </head>
 <body>
-    <nav>
-        <img src="./images/RHEMA1.png" alt="">
-        <div>
-            <a href="">About</a>
-            <a href="">Contact us</a>
+    <nav class="navbar navbar-expand-lg bg-body-lights">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="./images/RHEMA1.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  me-auto" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#aboutus">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">Contact us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
+        
 
-    <div id="landingpage">
-        <div class="landingtextcontainer col m-5">
+    <div id="landingpage" class="d-flex flex-direction-column justify-content-spacebetween">
+        <div class="d-flex flex-column align-items-start justify-content-center col m-5">
             <h1 class="title">RHEMA</h1>
             <h1 class="title">Handyman Services</h1>
             <h5 class="subtitle mb-5">Fixin' things like its the worldcup</h5>
             <div>
-                <a class="btn btn-primary" href="">Our Services <i class="bi bi-arrow-up-right"></i></a>
-                <a class="servicesbtn ms-3" href="">About Us<i class="bi bi-arrow-up"></i></a>
+                <a class="btn btn-primary p-2" href="">Our Services <i class="bi bi-arrow-up-right"></i></a>
+                <a class="servicesbtn ms-3 text-dark" href="">About Us<i class="bi bi-arrow-up text-dark"></i></a>
             </div>
             <div class="d-flex mt-5">
                 <div class="col pt-3">
@@ -44,21 +58,21 @@
                 </div>
             </div>
         </div>
-        <div class="landingimagecontainer col">
+        <div class="landingimagecontainer col ">
             <div class="gradientlanding"></div>
-            <img src="./images/goal.png" alt="" >
+            <img src="./images/goal.png" alt="">
         </div>
     </div>
     
-    <div id="aboutsection" class="darkbackground">
-        <div class="col d-flex flex-column ms-5">
-            <div class="aboutustitle">
+    <div id="aboutsection" class="darkbackground d-flex flex-column flex-lg-row justify-content-center align-items-center p-5">
+        <div class="col d-flex  flex-column m-3 ms-5 mt-5">
+            <div class="aboutustitle"  data-aos="fade-up">
                 <h2>Why Rhema is</h2>
                 <h2>the best in NOVA</h2>
                 <h3>We are proud of our customer-centric values</h3>
             </div>
         </div>
-        <div class="honestytrust borderaccent p-5 col">
+        <div class="d-flex flex-column flex-lg-row borderaccent p-5 col"  data-aos="fade-up">
             <div class="honestytext m-3">
                 <div class="borderaccentchild">
                     <h2 class="m-2">Honesty</h2>
@@ -86,11 +100,38 @@
         </div>
     </div>
 
-    <div class="m-5 ps-2 borderaccentchild servicestitle">
+        <div class="todosection m-5 d-flex align-items-center justify-content-center ">
+            <div class="todosection">
+                <div class="m-5 d-flex flex-column justify-content-between">
+                    <h2 class="m-5">Get your 'TO DO' list completed by a professional!</h2>
+                    <img src="./images/drill.png" class="d-block img-fluid">
+                </div>
+                <div class="m-5 d-flex flex-column justify-content-between">
+                    <img src="./images/paintroller.jpg" class="d-block img-fluid ">
+                    <h5 class="m-5">Don't feel stressed and overwhelmed. RHEMA Solutions is the handyman service provider
+                        trusted in
+                        Northern Virginia.</h5>
+                </div>
+            </div>
+        </div>
+
+    <div id="aboutus" class="d-flex flex-column align-items-center justify-content-center">
+        <div class="helpcontainer d-flex flex-column align-items-center justify-content-center w-sm-100">   
+            <p class="text-secondary m-2">ABOUT US</p>
+            <h1 class="mb-5 borderaccentchild ps-3" data-aos="fade-up">How Can We Help You?</h1>
+            <h5 data-aos="fade-up">At Rhema Services we specialize in making routine maintenance, small repair, and emergency repair experiences worry free. Email us
+                today
+                to learn how simple our process truly is!</h5>
+        </div>
+    </div>
+
+
+
+    <div class="m-5 ps-2 borderaccentchild servicestitle"  data-aos="fade-up">
         <h1>Services to make your day</h1>
     </div>
     <div id="services" class="mt-5">
-        <div class="servicescontainer m-5">
+        <div class="servicescontainer m-5"  data-aos="fade-up">
             <div>
                 <i class="bi bi-wrench"></i>
                 <h3 class="mt-3">Small Repair</h3>
@@ -122,15 +163,15 @@
                 <p>So nice!</p>
             </div>
         </div>
-        <a class="btn btn-primary" href="">Our Services <i class="bi bi-arrow-up-right"></i></a>
+        <a class="btn btn-primary mt-5 p-3" href="">Contact Us <i class="bi bi-arrow-up-right"></i></a>
     </div>
 
     <div class="ms-5 pb-3 mt-5 pt-5">
-        <h2 class="gallerytitle borderaccentchild ps-3">Our work</h2>
+        <h2 class="gallerytitle borderaccentchild ps-3" data-aos="fade-up">Our work</h2>
     </div>
     <div id="gallerysection" class="d-flex flex-column align-items-center justify-content-center">
         <div class="gallerybackground d-flex justify-content-center" >
-            <div id="carouselRhema" class="carousel slide">
+            <div id="carouselRhema" class="carousel slide "  data-aos="fade-up">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="./images/stripingbefore.jpeg" class="d-block w-100" alt="...">
@@ -156,17 +197,20 @@
             </div>
         </div>
     </div>
-    <div id="closingbanner" class="d-flex flex-column align-items-center justify-content-center mt-5 pt-5 mb-5 pb-5">
-        <img src="./images/RHEMA1.png" alt="">
-        <h3>We are in a mission to shape and define quality service</h3>
+    <div id="closingbanner" class="d-flex flex-column align-items-center justify-content-center pt-5 pb-5">
+        <img src="./images/RHEMA1.png" class="pt-5 m-3" alt="">
+        <h5 data-aos="fade-up" class="m-3">We are in a mission to shape and define quality service</h5>
     </div>
 
     <footer class="text-light darkbackground d-flex flex-column align-items-center justify-content-center " >
-        <a href="">About</a>
+        <a href="#aboutus">About</a>
         <a href="">Contact us</a>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
