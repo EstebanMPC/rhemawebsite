@@ -1,1 +1,3 @@
 # rhemawebsite
+
+Bootstrap Static Page 
